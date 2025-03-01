@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Scuderia Ferrari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1> Bem-Vindo á Scuderia Ferrari</h1>
+</header>
+
+<main>
+    <section id="login-section">
+    <h2>Login</h2>
+    <form action="login_process.php" method="POST">
+
+        <div class="input-group">
+        <label for="username"> Seu nome de usúario</label>
+        <input type="text" id="username" required placeholder="Seu nome de usúario"
+            </div>
+
+            <div class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password"
+            name="password" required placeholder="Sua Senha">
+            </div>
+
+                    <button type="submit">Entrar</button>
+                    </form>
+
+                    <p class="register-link">
+                        Não tem uma conta? <a
+                    href="registro.html"><Cadastre-se></a>
+                    </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Scuderia Ferrari - Todos os direitos reservados</p>
+</footer>
+<script>
+    document.querySelector('form').addEventListener('submit'), function(event) {
+        const username =
+    document.querySelector('#username').value;
+        const password =
+    document.querySelector('#passaword').value;
+    if (!username || !passaword) {
+        alert('Por favor, preencha os campos.');
+        event.preventDefault();
+    }
+    }
+</script>
+</body>
+</html>
